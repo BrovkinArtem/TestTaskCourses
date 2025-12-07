@@ -1,0 +1,33 @@
+.decor--circles,
+.decor--dots,
+.decor--arrows {
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.decor--circles {
+  top: 50vh;
+  right: 92vw;
+  width: clamp(40px, 5vw, 1000px);
+  height: clamp(40px, 5vw, 1000px);
+  background-image: url('../../icons/decorate/shapes1.svg');
+}
+
+.decor--dots {
+  top: 5vh;
+  right: -5vw;
+  width: clamp(80px, 10vw, 1000px);
+  height: clamp(80px, 10vw, 1000px);
+  background-image: url('../../icons/decorate/dots.svg');
+}
+
+.decor--arrows {
+  top: 65%;
+  right: 3%;
+  width: clamp(40px, 5vw, 1000px);
+  height: clamp(40px, 5vw, 1000px);
+  background-image: url('../../icons/decorate/shapes2.svg');
+}
