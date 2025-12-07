@@ -1,0 +1,13 @@
+{
+  "name": "TestTask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch styles/main.scss:styles/main.css"
+  },
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}

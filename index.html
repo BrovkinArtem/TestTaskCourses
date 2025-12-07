@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script src="../script.js" defer></script>
+</head>
+<body>
+<main>
+    <section class="courses" aria-labelledby="courses-title">
+        <div class="courses__main container">
+            <header class="courses__header">
+                <div class="courses__header-description">
+                    <p>Enjoy your studying!</p>
+                </div>
+                <h1 class="courses__header-title" id="courses-title">
+                    Our online courses
+                </h1>
+            </header>
+
+            <div class="courses__body tabs" data-js-tabs>
+                <div class="tabs__header">
+                    <div class="tabs__buttons" role="tablist" aria-label="Course categories">
+                        <button class="tabs__button is-active" role="tab" aria-selected="true" aria-controls="tabpanel-1" id="tab-all" data-js-tabs-button>
+                            All
+                        </button>
+                        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tabpanel-2" id="tab-marketing" data-js-tabs-button>
+                            Marketing
+                        </button>
+                        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tabpanel-3" id="tab-management" data-js-tabs-button>
+                            Management
+                        </button>
+                        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tabpanel-4" id="tab-hr" data-js-tabs-button>
+                            HR & Recruting
+                        </button>
+                        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tabpanel-5" id="tab-design" data-js-tabs-button>
+                            Design
+                        </button>
+                        <button class="tabs__button" role="tab" aria-selected="false" aria-controls="tabpanel-6" id="tab-dev" data-js-tabs-button>
+                            Development
+                        </button>
+                    </div>
+                    <form class="tabs__form" role="search" aria-label="Search courses">
+                        <div class="tabs__form-field">
+                            <input
+                                    class="tabs__form-search"
+                                    type="text"
+                                    placeholder="Search course..."
+                            />
+                            <img
+                                    class="tabs__form-icon"
+                                    src="../icons/search.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                            />
+                        </div>
+                    </form>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content"
+                         id="tabpanel-1"
+                         aria-labelledby="tab-1"
+                         tabindex="0"
+                         data-js-tabs-content>
+                        <ul class="courses__list">
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/1.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">The Ultimate Google Ads Training Course</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$100</span>
+                                            <span class="course-card__details-author">by Jerome Bell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/2.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Prduct Management Fundamentals</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$480</span>
+                                            <span class="course-card__details-author">by Marvin McKinney</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/3.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">HR  Management and Analytics</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$200</span>
+                                            <span class="course-card__details-author">by Leslie Alexander Li</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/4.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">Brand Management & PR Communications</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$530</span>
+                                            <span class="course-card__details-author">by Kristin Watson</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/5.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--design">Design</span>
+                                        <h2 class="course-card__title">Graphic Design Basic</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$500</span>
+                                            <span class="course-card__details-author">by Guy Hawkins</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/6.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Business Development Management</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$400</span>
+                                            <span class="course-card__details-author">by Dianne Russell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/7.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--development">Development</span>
+                                        <h2 class="course-card__title">Highload Software Architecture</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$600</span>
+                                            <span class="course-card__details-author">by Brooklyn Simmons</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/8.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">Human Resources – Selection and Recruitment</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$150</span>
+                                            <span class="course-card__details-author">by Kathryn Murphy</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/9.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--design">Design</span>
+                                        <h2 class="course-card__title">User Experience. Human-centered Design</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$240</span>
+                                            <span class="course-card__details-author">by Cody Fisher</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/1.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">The Ultimate Google Ads Training Course</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$100</span>
+                                            <span class="course-card__details-author">by Jerome Bell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/2.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Prduct Management Fundamentals</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$480</span>
+                                            <span class="course-card__details-author">by Marvin McKinney</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/3.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">HR  Management and Analytics</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$200</span>
+                                            <span class="course-card__details-author">by Leslie Alexander Li</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/4.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">Brand Management & PR Communications</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$530</span>
+                                            <span class="course-card__details-author">by Kristin Watson</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/5.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--design">Design</span>
+                                        <h2 class="course-card__title">Graphic Design Basic</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$500</span>
+                                            <span class="course-card__details-author">by Guy Hawkins</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/6.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Business Development Management</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$400</span>
+                                            <span class="course-card__details-author">by Dianne Russell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/7.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--development">Development</span>
+                                        <h2 class="course-card__title">Highload Software Architecture</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$600</span>
+                                            <span class="course-card__details-author">by Brooklyn Simmons</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/8.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">Human Resources – Selection and Recruitment</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$150</span>
+                                            <span class="course-card__details-author">by Kathryn Murphy</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content" hidden
+                         id="tabpanel-2"
+                         aria-labelledby="tab-2"
+                         tabindex="0"
+                         data-js-tabs-content>
+                        <ul class="courses__list">
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/1.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">The Ultimate Google Ads Training Course</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$100</span>
+                                            <span class="course-card__details-author">by Jerome Bell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/4.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">Brand Management & PR Communications</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$530</span>
+                                            <span class="course-card__details-author">by Kristin Watsonl</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/1.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">The Ultimate Google Ads Training Course</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$100</span>
+                                            <span class="course-card__details-author">by Jerome Bell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/4.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--marketing">Marketing</span>
+                                        <h2 class="course-card__title">Brand Management & PR Communications</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$530</span>
+                                            <span class="course-card__details-author">by Kristin Watsonl</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content" hidden
+                         id="tabpanel-3"
+                         aria-labelledby="tab-3"
+                         tabindex="0"
+                         data-js-tabs-content>
+                        <ul class="courses__list">
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/2.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Prduct Management Fundamentals</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$480</span>
+                                            <span class="course-card__details-author">by Marvin McKinney</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/6.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Business Development Management</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$400</span>
+                                            <span class="course-card__details-author">by Dianne Russell</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/2.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--management">Management</span>
+                                        <h2 class="course-card__title">Prduct Management Fundamentals</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$480</span>
+                                            <span class="course-card__details-author">by Marvin McKinney</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content" hidden
+                         id="tabpanel-4"
+                         aria-labelledby="tab-4"
+                         tabindex="0"
+                         data-js-tabs-content>
+                        <ul class="courses__list">
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/3.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">HR  Management and Analytics</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$200</span>
+                                            <span class="course-card__details-author">by Leslie Alexander Li</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/8.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">Human Resources – Selection and Recruitment</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$150</span>
+                                            <span class="course-card__details-author">by Kathryn Murphy</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/3.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">HR  Management and Analytics</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$200</span>
+                                            <span class="course-card__details-author">by Leslie Alexander Li</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/8.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">Human Resources – Selection and Recruitment</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$150</span>
+                                            <span class="course-card__details-author">by Kathryn Murphy</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/3.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--hr">HR & Recruting</span>
+                                        <h2 class="course-card__title">HR  Management and Analytics</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$200</span>
+                                            <span class="course-card__details-author">by Leslie Alexander Li</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content" hidden
+                         id="tabpanel-5"
+                         aria-labelledby="tab-5"
+                         tabindex="0"
+                         data-js-tabs-content>
+                        <ul class="courses__list">
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/5.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--design">Design</span>
+                                        <h2 class="course-card__title">Graphic Design Basic</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$500</span>
+                                            <span class="course-card__details-author">by Guy Hawkins</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/9.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--design">Design</span>
+                                        <h2 class="course-card__title">User Experience. Human-centered Design</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$240</span>
+                                            <span class="course-card__details-author">by Cody Fisher</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content" hidden
+                         id="tabpanel-6"
+                         aria-labelledby="tab-6"
+                         tabindex="0"
+                         data-js-tabs-content>
+                        <ul class="courses__list">
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/7.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--development">Development</span>
+                                        <h2 class="course-card__title">Highload Software Architecture</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$600</span>
+                                            <span class="course-card__details-author">by Brooklyn Simmons</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/7.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--development">Development</span>
+                                        <h2 class="course-card__title">Highload Software Architecture</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$600</span>
+                                            <span class="course-card__details-author">by Brooklyn Simmons</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="courses__item">
+                                <article class="course-card">
+                                    <img
+                                            class="course-card__image"
+                                            src="../images/course-card/7.png"
+                                            alt=""
+                                            width="390"
+                                            height="240"
+                                            loading="lazy"
+                                    />
+                                    <div class="course-card__info">
+                                        <span class="course-card__tag course-card__tag--development">Development</span>
+                                        <h2 class="course-card__title">Highload Software Architecture</h2>
+                                        <p class="course-card__details">
+                                            <span class="course-card__details-amount">$600</span>
+                                            <span class="course-card__details-author">by Brooklyn Simmons</span>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses__more">
+                <button class="courses__more-button">Load More</button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

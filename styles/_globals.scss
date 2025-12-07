@@ -1,0 +1,46 @@
+html {
+  &.is-lock {
+    overflow: hidden;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+body {
+  display: flex;
+  font-weight: 700;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+  letter-spacing: -0.03em;
+  color: var(--color-gray-900);
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  &[class] {
+    text-decoration: none;
+  }
+}
